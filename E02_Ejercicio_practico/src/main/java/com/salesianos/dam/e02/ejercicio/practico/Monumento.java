@@ -1,11 +1,10 @@
-package com.salesianos.dam.E02_Ejercicio_practico;
+package com.salesianos.dam.e02.ejercicio.practico;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+
+import javax.persistence.*;
 
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor
@@ -14,16 +13,19 @@ public class Monumento {
     @Id
     @GeneratedValue
     private Long id;
-    private int codigoPais;
+    private String codigoPais;
     private String nombrePais;
     private String nombreCiudad;
-    private double localizacion;
+    private String localizacion;
     private String nombreMonumento;
+
+    //@Lob
+    @Column(length= 1000)
     private String descripcion;
     private String urlFoto;
 
 
-    public Monumento(int codigoPais, String nombrePais, String nombreCiudad, double localizacion, String nombreMonumento, String descripcion, String urlFoto) {
+    public Monumento(String codigoPais, String nombrePais, String nombreCiudad, String localizacion, String nombreMonumento, String descripcion, String urlFoto) {
         this.codigoPais = codigoPais;
         this.nombrePais = nombrePais;
         this.nombreCiudad = nombreCiudad;

@@ -1,4 +1,4 @@
-package com.salesianos.dam.E02_Ejercicio_practico;
+package com.salesianos.dam.e02.ejercicio.practico;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

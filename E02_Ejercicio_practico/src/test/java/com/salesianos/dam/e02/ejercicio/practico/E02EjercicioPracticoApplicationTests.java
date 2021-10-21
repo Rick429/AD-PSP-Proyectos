@@ -1,4 +1,4 @@
-package com.salesianos.dam.E02_Ejercicio_practico;
+package com.salesianos.dam.e02.ejercicio.practico;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

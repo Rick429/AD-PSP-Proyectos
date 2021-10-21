@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "ca1749df-3bf4-4484-bd28-7690f24fd061",
+		"name": "E02.-Ejercicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Listar todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/monumento/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Añadir un monumento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"codigoPais\": \"IT\",\r\n        \"nombrePais\": \"Italia\",\r\n        \"nombreCiudad\": \"Paris\",\r\n        \"localizacion\": \"37.3834852,-5.9879042,15\",\r\n        \"nombreMonumento\": \"Christopher Columbus Monument\",\r\n        \"descripcion\": \"Monumento de Sevilla\",\r\n        \"urlFoto\": \"url\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monumento/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Editar un monumento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoPais\": \"FR\",\r\n    \"nombrePais\": \"Francia\",\r\n    \"nombreCiudad\": \"Francia\",\r\n    \"localizacion\": \"37.3834852,-5.9879042,15\",\r\n    \"nombreMonumento\": \"Christopher Columbus Monument\",\r\n    \"descripcion\": \"Monumento de Sevilla\",\r\n    \"urlFoto\": \"url\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/monumento/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Eliminar un monumento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/monumento/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Listar 1 monumento por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/monumento/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"monumento",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
